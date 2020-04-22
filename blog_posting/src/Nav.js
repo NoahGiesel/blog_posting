@@ -8,7 +8,7 @@ function Nav() {
 
   return (
     <nav>
-        <h3>Logo</h3>
+        <h3 className="nav-logo">NG</h3>
         <ul className="nav-links">
             <Link style={navStyle} to="/">
                 <li>📖 Blog</li> 
