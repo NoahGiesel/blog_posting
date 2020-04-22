@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.tab {
+  max-width: 100%;
+  padding: 0 2em;
+  background-color: #FFF;
+  border-radius: 0.3rem;
+  -webkit-box-shadow: 0 2px 2px #CCC;
+          box-shadow: 0 2px 2px #CCC;
+  line-height: 4em;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: auto;
+}
+
+.tab-items {
+  --indicator: 1;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  grid-auto-flow: column;
+  grid-gap: 1em;
+}
+
+.tab-items > *:nth-child(1) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+}
+
+.tab-items > *:nth-child(2) {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+}
+
+.tab-items > *:nth-child(3) {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+}
+
+.tab-items > *:nth-child(4) {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4 / 5;
+}
+
+.tab-items > *:nth-child(5) {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  grid-column: 5 / 6;
+}
+
+.tab-items > *:nth-child(6) {
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 1;
+  grid-column: 6 / 7;
+}
+
+.tab-item {
+  display: inline;
+  -ms-grid-row: 1;
+  grid-row: 1/1;
+}
+
+.tab-item.active .item-link {
+  color: #2DA;
+}
+
+.item-link {
+  padding: 0 0.75em;
+  color: #456;
+  text-decoration: none;
+  display: inline-block;
+  -webkit-transition: color 256ms;
+  transition: color 256ms;
+}
+
+.item-link:hover {
+  color: #297;
+  -webkit-text-decoration: undelrine;
+          text-decoration: undelrine;
+}
+
+.separator {
+  width: 1px;
+  height: 60%;
+  margin: 10% 0;
+  background-color: #CCC;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.tab-indicator {
+  height: 3px;
+  background-color: #2DA;
+  border-radius: 3px 3px 0 0;
+  grid-column: var(--index)/span 1 !important;
+  -ms-grid-row: 1;
+  grid-row: 1/1;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+body {
+  min-height: 100vh;
+  background: #EEE;
+  font-family: "Roboto", sans-serif;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=style.css.map */
