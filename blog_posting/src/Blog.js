@@ -28,7 +28,7 @@ function Blog() {
                     <Link to={`/blog/${item.id}`}>{item.name}</Link>
                 </h1>  
                 <p className="blog_p">
-                    <Link to={`/blog/${item.id}`}>{item.short_description}</Link>
+                    <Link to={`/blog/${item.id}`}> {item.short_description}</Link>
                 </p>
                 <h4></h4>
             </React.Fragment>
