@@ -21,7 +21,7 @@ function Blog() {
     }
 
   return (
-    <div className="blog">
+    <div className="blog"> 
         {items.map(item => ( 
             <React.Fragment key={item.id} >
                 <h1 className="blog_h1">

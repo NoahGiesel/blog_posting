@@ -58,11 +58,11 @@ nav {
 }
 
 .blog a { 
-    color: rgb(20, 20, 20)  !important ;
+    color: rgb(20, 20, 20)  !important  ;
 } 
 .blog_h1:hover, 
 .blog_p:hover {
-    text-decoration: underline;
+    text-decoration: underline ;
 }
 
 
